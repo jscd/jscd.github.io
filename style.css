@@ -1,0 +1,269 @@
+/* CSS for jscd.pw. All content written by Justin DeSimpliciis */
+
+body, html {
+	overflow-x: hidden;
+	height: 100%;
+	margin: 0;
+	padding-left: 5%;
+	padding-top: 4%;
+}
+
+body {
+	background: white;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+
+	transition: 0.5s ease;
+}
+
+a:hover {
+	color: red;
+	font-size: 2vw;
+}
+
+.content {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5vw;
+	position: relative;
+}
+
+.mobile {
+	display: none;
+}
+
+.content .uni {
+	overflow: hidden;
+	position: absolute;
+	width: 70%;
+	left: -12%;
+	z-index: 0;
+}
+
+.content .text {
+	opacity: 0;
+	-webkit-animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
+	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
+	margin-top: 5%;
+	margin-left: 25%;
+	width: 70vw;
+	line-height: 1vw;
+	z-index: 100;
+}
+
+.content .text .title {
+	top: 0;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	position: relative;
+    font-family: 'Grenze', serif;
+    font-weight: 200;
+}
+
+.content .text .name {
+	margin-top: 0;
+	padding-top: 3%;
+    font-family: 'Grenze', serif;
+}
+
+.content .text p {
+	margin-left: 5%;
+}
+
+.content .text #wheel-content {
+	margin-left: 7%;
+	line-height: 2vw;
+}
+
+
+@keyframes fadein {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+	0% {-webkit-opacity: 0;}
+	100% {-webkit-opacity: 1;}
+}
+
+/* Unicycle SVG */
+svg {
+	width: 100%;
+	align-self: center;
+}
+
+svg #Frame_x5F_Seat {
+	transform-origin: 49% 70%;
+
+	/*cubic-bezier(0.990, -0.005, 0.965, 0.970)*/
+	-webkit-animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse backwards;
+	animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse backwards;
+
+}
+
+svg #Wheel, svg #FrontPedal, svg #BackPedal {
+	transform-origin: 49% 70.5%;
+	-webkit-animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.3s infinite normal forwards;
+	animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.3s infinite normal forwards;
+
+/*	-webkit-animation-name: rideUnicycle, rideUnicycle;
+	-webkit-animation-duration: 6s, 4.8s;
+	-webkit-animation-timing-function: ease-in, linear;
+	-webkit-animation-delay: 2.2s, 8.3s;
+	-webkit-animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards, forwards;*/
+}
+
+svg #FrontPedal #Pedal {
+	transform-origin: 55% 81%;
+}
+
+svg #BackPedal #Pedal {
+	transform-origin: 43% 60.5%;
+}
+
+svg #FrontPedal #Pedal, svg #BackPedal #Pedal {
+	-webkit-animation: spinPedalA 6s ease-in 2.2s 1 normal forwards, spinPedalB 4.8s linear 8.3s infinite normal forwards;
+	animation: spinPedalA 6s ease-in 2.2s 1 normal forwards, spinPedalB 4.8s linear 8.3s infinite normal forwards;
+}
+
+
+@keyframes dropUnicycle {
+	0% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(-105deg);}
+}
+
+@keyframes rideUnicycleA {
+	0% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(360deg);}
+}
+
+@keyframes rideUnicycleB {
+	0% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(360deg);}
+}
+
+@keyframes spinPedalA {
+	0% {transform: rotateZ(0deg);}
+	100%{transform: rotateZ(-360deg);}
+}
+
+@keyframes spinPedalB {
+	0% {transform: rotateZ(0deg);}
+	100%{transform: rotateZ(-360deg);}
+}
+
+@-webkit-keyframes dropUnicycle {
+	0% {-webkit-transform: rotateZ(0deg);}
+	100% {-webkit-transform: rotateZ(-105deg);}
+}
+
+@-webkit-keyframes rideUnicycleA {
+	0% {-webkit-transform: rotateZ(0deg);}
+	100% {-webkit-transform: rotateZ(360deg);}
+}
+
+@-webkit-keyframes rideUnicycleB {
+	0% {-webkit-transform: rotateZ(0deg);}
+	100% {-webkit-transform: rotateZ(360deg);}
+}
+
+@-webkit-keyframes spinPedalA {
+	0% {-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(-360deg);}
+}
+
+@-webkit-keyframes spinPedalB {
+	0% {-webkit-transform: rotateZ(0deg);}
+	100%{-webkit-transform: rotateZ(-360deg);}
+}
+
+@media only screen and (max-width: 812px) {
+	body, html {
+		padding-top: 2%;
+	}
+
+	.content {
+		overflow: auto;
+		overflow-x: hidden;
+	}
+
+	.content .uni {
+		overflow: hidden;
+		overflow-x: hidden;
+		width: 200%;
+	}
+
+	.content .text {
+		overflow: auto;
+		width: 55vw;
+		margin-top: 100px;
+		font-size: 4vw;
+		margin-left: 0;
+		padding-left: 0;
+		line-height: 7vw;
+	}
+
+	a:hover {
+		color: red;
+		font-size: 4.5vw;
+	}
+
+	.content .text #wheel-content {
+		overflow: wrap;
+		margin-left: 0;
+		line-height: 5vw;
+	}
+
+	svg #Frame_x5F_Seat #Seat_1_ {
+		transform-origin: 50% 0%;
+		transform: rotateY(180deg);
+	}
+
+	.non-mobile {
+		display: none;
+	}
+
+	.mobile {
+		display: inline;
+	}
+
+	@keyframes rideUnicycleA {
+	0% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(-360deg);}
+}
+
+	@keyframes rideUnicycleB {
+		0% {transform: rotateZ(0deg);}
+		100% {transform: rotateZ(-360deg);}
+	}
+
+	@keyframes spinPedalA {
+		0% {transform: rotateZ(0deg);}
+		100%{transform: rotateZ(360deg);}
+	}
+
+	@keyframes spinPedalB {
+		0% {transform: rotateZ(0deg);}
+		100%{transform: rotateZ(360deg);}
+	}
+}
+
+
+/* Unicycle SVG CSS */
+.st0{fill:#1A1A1A;}
+.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+.st2{fill:#808080;}
+.st3{fill:#666666;}
+.st4{fill:#F7931E;}
+.st5{fill:#F76F1E;}

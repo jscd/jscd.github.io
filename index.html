@@ -156,46 +156,53 @@
 				<h1 class="name">Justin DeSimpliciis</h1>
 			</div>
 			<br>
-			<p style="text-decoration: underline;margin-left: 5vw;">Justin Facts&#8482;</p>
+			<p style="text-decoration: underline;margin-left: 5vw;margin-bottom:0;padding-bottom:0;">Justin Facts&#8482;:</p>
 			<p id="wheel-content">
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
 				I'm a <b>Computer Science</b> major at <b>Georgia Tech</b>
 				<br><span class="mobile"><br></span>
 
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
-				I have <b>three years</b> of freelance work experience
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
+				I have <b>four years</b> of freelance work experience
 				<br><span class="mobile"><br></span>
 
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
-				I've done both <b>back-end</b> server work and <b>front-end</b> web development
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
+				I have done both <b>backend</b> and <b>frontend</b> development
 				<br><span class="mobile"><br></span>
 
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
-				I'm concentrating on the study of <b>computer systems architecture</b> and <b>cybersecurity</b>
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
+				I'm currently studying <b>computer systems architecture</b> and <b>cybersecurity</b>
 				<br><span class="mobile"><br></span>
 
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
-				I've run my own servers for both <b>commercial</b> and <b>custom</b> applications
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
+				I've run servers for both <b>commercial</b> and <b>custom</b> applications
 				<br><span class="mobile"><br></span>
 
-				<span class="non-mobile">&nbsp;&nbsp;&nbsp;</span><span class="mobile">&#8227;&nbsp;</span>
-				My hobbies include video editing, video games, piano, and riding a <b>unicycle</b>
+				<span class="non-mobile">&nbsp;&nbsp;&nbsp;</span><span class="bullet">&#10148;</span>
+				My hobbies include video editing, video game development, music, and<br>riding a <b>unicycle</b>
 				<br><span class="mobile"><br></span>
 
 				<br>
 				<br>
 
 				<span id="contact-online-accts">
-					<span style="text-decoration: underline;">Links & Contact</span><br>
+					<span style="text-decoration: underline;">Links &amp; Contact</span><br>
 					&#8227;&nbsp;<a href="https://www.github.com/jscd" target="_blank">My GitHub <i class="fab fa-github"></i> (jscd)</a><br>
 					&#8227;&nbsp;<a href="https://www.linkedin.com/in/jscd" target="_blank">My LinkedIn <i class="fab fa-linkedin"></i> (jscd)</a><br>
-					&#8227;&nbsp;<a href="https://www.twitter.com/jscd_" target="_blank">My Twitter <i class="fab fa-twitter"></i> (jscd_)</a><br>
 					&#8227;&nbsp;Send me an email at <i id="e">justin at jscd dot pw</i><br>
 				</span>
-			<script>
-				name = document.getElementsByClassName("name")[0].innerHTML;
-				document.getElementById("e").innerHTML = name.substr(0,6).toLowerCase() + "&#64;" + document.getElementsByClassName("title")[0].innerHTML;
-			</script>
+				<script>
+					name = document.getElementsByClassName("name")[0].innerHTML;
+					document.getElementById("e").innerHTML = name.substr(0,6).toLowerCase() + "&#64;" + document.getElementsByClassName("title")[0].innerHTML;
+					var m = document.getElementById("e").innerHTML;
+					document.getElementById("e").innerHTML = "<a href=\"mailto:" + m + "\">" + m + "</a>"; 
+				</script>
+				<script>
+					var bs = document.getElementsByClassName("bullet");
+					for(var i = 0; i < bs.length; i++){
+						bs[i].innerHTML = "&#10148;";
+					}
+				</script>
 			</p>
 		</div>
 	</div>

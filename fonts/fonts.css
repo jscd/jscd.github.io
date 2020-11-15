@@ -1,0 +1,182 @@
+/* @font-face definitions */
+
+/**   __         ______     ______   ______    
+ **  /\ \       /\  __ \   /\__  _\ /\  __ \   
+ **  \ \ \____  \ \  __ \  \/_/\ \/ \ \ \/\ \  
+ **   \ \_____\  \ \_\ \_\    \ \_\  \ \_____\ 
+ **    \/_____/   \/_/\/_/     \/_/   \/_____/ 
+ **/
+
+/* normal */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* light */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* bold */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* italic */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* bold & italic */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* light & italic */
+@font-face {
+	font-family: 'Lato';
+	src: url('lato/Lato-LightItalic.ttf');
+	font-weight: 300;
+	font-style: italic;
+}
+
+/**   _____ _____  ______ _   _ ____________ 
+ **  / ____|  __ \|  ____| \ | |___  /  ____|
+ ** | |  __| |__) | |__  |  \| |  / /| |__   
+ ** | | |_ |  _  /|  __| | . ` | / / |  __|  
+ ** | |__| | | \ \| |____| |\  |/ /__| |____ 
+ **  \_____|_|  \_\______|_| \_/_____|______|                                       
+ **/
+
+ /* normal */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* light */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* extra-light */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-ExtraLight.ttf');
+	font-weight: 200;
+	font-style: normal;
+}
+
+/* bold */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* italic */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* bold & italic */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* light & italic */
+@font-face {
+	font-family: 'Grenze';
+	src: url('grenze/Grenze-LightItalic.ttf');
+	font-weight: 300;
+	font-style: italic;
+}
+
+/**
+ **   ██████  ▒█████   █    ██  ██▀███   ▄████▄  ▓█████     ▄████▄   ▒█████  ▓█████▄ ▓█████     ██▓███   ██▀███   ▒█████  
+ ** ▒██    ▒ ▒██▒  ██▒ ██  ▓██▒▓██ ▒ ██▒▒██▀ ▀█  ▓█   ▀    ▒██▀ ▀█  ▒██▒  ██▒▒██▀ ██▌▓█   ▀    ▓██░  ██▒▓██ ▒ ██▒▒██▒  ██▒
+ ** ░ ▓██▄   ▒██░  ██▒▓██  ▒██░▓██ ░▄█ ▒▒▓█    ▄ ▒███      ▒▓█    ▄ ▒██░  ██▒░██   █▌▒███      ▓██░ ██▓▒▓██ ░▄█ ▒▒██░  ██▒
+ **   ▒   ██▒▒██   ██░▓▓█  ░██░▒██▀▀█▄  ▒▓▓▄ ▄██▒▒▓█  ▄    ▒▓▓▄ ▄██▒▒██   ██░░▓█▄   ▌▒▓█  ▄    ▒██▄█▓▒ ▒▒██▀▀█▄  ▒██   ██░
+ ** ▒██████▒▒░ ████▓▒░▒▒█████▓ ░██▓ ▒██▒▒ ▓███▀ ░░▒████▒   ▒ ▓███▀ ░░ ████▓▒░░▒████▓ ░▒████▒   ▒██▒ ░  ░░██▓ ▒██▒░ ████▓▒░
+ ** ▒ ▒▓▒ ▒ ░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░ ░▒ ▒  ░░░ ▒░ ░   ░ ░▒ ▒  ░░ ▒░▒░▒░  ▒▒▓  ▒ ░░ ▒░ ░   ▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ 
+ ** ░ ░▒  ░ ░  ░ ▒ ▒░ ░░▒░ ░ ░   ░▒ ░ ▒░  ░  ▒    ░ ░  ░     ░  ▒     ░ ▒ ▒░  ░ ▒  ▒  ░ ░  ░   ░▒ ░       ░▒ ░ ▒░  ░ ▒ ▒░ 
+ ** ░  ░  ░  ░ ░ ░ ▒   ░░░ ░ ░   ░░   ░ ░           ░      ░        ░ ░ ░ ▒   ░ ░  ░    ░      ░░         ░░   ░ ░ ░ ░ ▒  
+ **       ░      ░ ░     ░        ░     ░ ░         ░  ░   ░ ░          ░ ░     ░       ░  ░               ░         ░ ░  
+ **                                     ░                  ░                  ░                                           
+ **/
+
+
+/* normal */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* light */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-Light.ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* bold */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* italic */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-Italic.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* bold & italic */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* light & italic */
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('source_code_pro/SourceCodePro-LightItalic.ttf');
+	font-weight: 300;
+	font-style: italic;
+}

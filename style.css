@@ -186,7 +186,7 @@ pre {
 
 	.content .text {
 		overflow: visible;
-		width: 55vw;
+		width: 60vw;
 		margin-top: 100px;
 		font-size: 4vw;
 		margin-left: 0;
@@ -205,7 +205,7 @@ pre {
 	}
 
 
-	svg #Frame_x5F_Seat #Seat_1_ {
+	.Seat_1_ {
 		transform-origin: 50% 0%;
 		transform: rotateY(180deg);
 	}
@@ -216,26 +216,6 @@ pre {
 
 	.mobile {
 		display: inline;
-	}
-
-	@keyframes rideUnicycleA {
-		0% {transform: rotateZ(0deg);}
-		100% {transform: rotateZ(-360deg);}
-	}
-
-	@keyframes rideUnicycleB {
-		0% {transform: rotateZ(0deg);}
-		100% {transform: rotateZ(-360deg);}
-	}
-
-	@keyframes spinPedalA {
-		0% {transform: rotateZ(0deg);}
-		100%{transform: rotateZ(360deg);}
-	}
-
-	@keyframes spinPedalB {
-		0% {transform: rotateZ(0deg);}
-		100%{transform: rotateZ(360deg);}
 	}
 }
 
@@ -391,6 +371,29 @@ svg {
 	0% {-webkit-transform: rotateZ(0deg);}
 	100%{-webkit-transform: rotateZ(-360deg);}
 }
+
+@media only screen and (max-width: 812px) {
+	@keyframes rideUnicycleA {
+		0% {transform: rotateZ(0deg);}
+		100% {transform: rotateZ(-360deg);}
+	}
+
+	@keyframes rideUnicycleB {
+		0% {transform: rotateZ(0deg);}
+		100% {transform: rotateZ(-360deg);}
+	}
+
+	@keyframes spinPedalA {
+		0% {transform: rotateZ(0deg);}
+		100%{transform: rotateZ(360deg);}
+	}
+
+	@keyframes spinPedalB {
+		0% {transform: rotateZ(0deg);}
+		100%{transform: rotateZ(360deg);}
+	}
+}
+
 
 /* Unicycle SVG CSS */
 .st0{fill:#1A1A1A;}

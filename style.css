@@ -143,7 +143,7 @@ pre {
     font-size: 250%;
 }
 
-[data-title]:hover:after, [data-title]:active:after {
+[data-title]:hover:after, [data-title]:focus:after, [data-title]:active:after {
     opacity: 1;
     transition: all 0.1s ease 0.2s;
     visibility: visible;

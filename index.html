@@ -160,50 +160,83 @@
 			</div>
 			<br>
 			I'm an undergraduate computer science major at the <em class="nonmobile">Georgia&nbsp;Institute&nbsp;of&nbsp;Technology</em><em class="mobile">Georgia Institute of Technology</em>, with concentrations in
-			<em>information&nbsp;storage &amp; transmission and systems&nbsp;architecture</em>.
+			<em>information&nbsp;storage &amp; transmission</em> and <em>systems&nbsp;architecture</em>.
 			<br><br>
 
-			My most popular project is <a href="https://github.com/jscd/Boyfriend-Alert">Boyfriend-Alert</a>,
-			and I'm currently working on <a href="https://github.com/jscd/Celly">Celly</a>.
+			My most popular project is called <a href="https://github.com/jscd/Boyfriend-Alert">Boyfriend-Alert</a>,
+			and I'm currently working on a cellular automata library called <a href="https://github.com/jscd/Celly">Celly</a>.
 			<br><br>
 
 			At some point this site will have a <a class="tooltip" data-title="...but for now it's just an empty link :(">blog</a>.
 			<br><br>
 
-			When I'm not doing schoolwork, you'll find me<br>
-				working on personal projects,
+			When I'm not working, you'll find me
+				building personal projects,
 				attempting to do
-				<a class="tooltip" data-title="Recently I've been doing a lot of 247ctf.com, but I've also done some of Google CTF 2020 and Google CTF 2018.">CTFs</a>,
+				CTFs,
 				solving <a href="https://projecteuler.net/">Project Euler</a> problems,
-				playing
-				<a class="tooltip" data-title="Some people might say &quot;Justin, why would you spend hard-earned money on a MIDI keytar?&quot; to which I would reply with a sick keytar solo.">piano/keytar</a>,
+				playing the
+				piano or keytar,
 				making video games,
-				riding a <a class="tooltip" data-title="Who needs two wheels?">unicycle</a>,
-				and cooking <a class="tooltip" data-title="Okay my usual favorite pasta shape is cavatappi, but if you can find it bucatini is the way to go. 🤌">delicious pasta</a>.
+				riding a unicycle,
+				and cooking delicious pasta.
 			<br><br>
 
 			<br>
 			<h3 class='heading'>Social &amp; Contact</h3>
-			The best way to contact me via email.
+			
 			<ul>
 				<li>
-					<code>justin@</code><span style="display: none;">nope</span><code>jscd.pw</code>
+					<code>
+					Email ......
+					<span id="m"><code>justin@</code><span style="display: none;">nope</span><code>jscd.pw</code></span>
+					</code>
 				</li>
 				<li>
-					<code><a href="https://www.github.com/jscd">
-						github.com/jscd
-					</a></code>
+					<code>
+					Keybase ....
+					<a href="https://keybase.io/jscd">
+					@jscd
+					</a>
+					</code>
 				</li>
 				<li>
-					<code><a href="https://www.linkedin.com/in/jscd">
-						linkedin.com/in/jscd
-					</a></code>
+					<code>
+					GitHub .....
+					<a href="https://www.github.com/jscd">
+					@jscd
+					</a>
+					</code>
+				</li>
+				<li>
+					<code>LinkedIn ...
+					<a href="https://www.linkedin.com/in/jscd">
+					@jscd
+					</a>
+					</code>
 				</li>
 			<ul>
 			<script>
 				// Disable the animation if visited in the last [dmin] mins
 				const dmin = 8;
 				if(hasVisited()){setVisited(dmin);var content_text=document.getElementsByClassName("text")[0];content_text.id="loaded";var uni=document.getElementsByClassName("uni")[0];uni.id="loaded"}else setVisited(dmin);
+			</script>
+
+			<script>
+				const m = document.getElementById("m");
+				m.addEventListener('click', function(event){
+					if(document.body.createTextRange){
+						const r = document.body.createTextRange();
+						r.moveToElementText(m);
+						r.select();
+					} else if(window.getSelection){
+						const s = window.getSelection();
+						const r = document.createRange();
+						r.selectNodeContents(m);
+						s.removeAllRanges();
+						s.addRange(r);
+					}
+				});
 			</script>
 		</div>
 	</div>

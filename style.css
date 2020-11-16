@@ -43,17 +43,20 @@ li::before {
 }
 
 a {
-	color: #0000EE;
+	color: black;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #EE0044;
+	transition: 0.15s;
+	color: white;
+	background-color: black;
+	text-decoration: none;
 }
 
 
 .tooltip {
-	cursor: help;
+	cursor: not-allowed;
 	color: darkgreen;
 	text-decoration: none;
 }
@@ -70,9 +73,9 @@ a:hover {
 	margin-bottom: 10px;
 	padding: 0;
     font-family: 'Lato', serif;
-    font-weight: 300;
+    font-weight: normal;
 	position: relative;
-	font-size: 115%;
+	font-size: 16px;
 	padding-top: 2%;
 }
 
@@ -81,10 +84,16 @@ a:hover {
 	font-weight: 400;
 }
 
-code, em {
+em {
 	font-size: 90%;
 	font-family: 'Source Code Pro';
-	font-weight: 400;
+	font-weight: normal;
+}
+
+code {
+	font-size: 90%;
+	font-family: 'Source Code Pro';
+	font-weight: normal;
 }
 
 pre {
@@ -102,8 +111,9 @@ pre {
 .content .uni {
 	overflow: hidden;
 	position: absolute;
-	width: 70%;
-	left: 50%;
+	/*width: 70%;*/
+	width: 1100px;
+	margin-left: 40%;
 	z-index: 0;
 }
 
@@ -112,8 +122,9 @@ pre {
 	opacity: 0;
 	margin-top: 5%;
 	margin-left: 25%;
-	width: 40vw;
-	line-height: 100%;
+	/*width: 40vw;*/
+	width: 500px;
+	line-height: 19px;
 	z-index: 100;
 	overflow: visible;
 	height: 100%;
@@ -143,47 +154,11 @@ pre {
     font-size: 250%;
 }
 
-[data-title]:hover:after, [data-title]:focus:after, [data-title]:active:after {
-    opacity: 1;
-    transition: all 0.1s ease 0.2s;
-    visibility: visible;
-}
-[data-title]:after {
-    content: attr(data-title);
-    position: absolute;
-    bottom: -1.6em;
-    left: 110%;
-    padding: 4px 4px 4px 8px;
-    color: #222;
-    /*white-space: nowrap;*/
-    min-width: 300%;
-    display: flex;
-    -moz-border-radius: 5px; 
-    -webkit-border-radius: 5px;  
-    border-radius: 5px;  
-    -moz-box-shadow: 0px 0px 4px #222;  
-    -webkit-box-shadow: 0px 0px 4px #222;  
-    box-shadow: 0px 0px 4px #222;  
-    background-color: #111111;
-    color: white;
-    opacity: 0;
-    z-index: 99999;
-    visibility: hidden;
-}
-
-[data-title] {
-    position: relative;
-}
-
 .eb {
 	padding-left: 1%;
 	padding-right: 1%;
 }
 
-.noclick {
-	pointer-events: none;
-	cursor: default;
-}
 
 .mobile {
 	display: none;
@@ -206,7 +181,7 @@ pre {
 		overflow: hidden;
 		overflow-x: hidden;
 		width: 200%;
-		left: -12%;
+		left: -45%;
 	}
 
 	.content .text {
@@ -229,10 +204,6 @@ pre {
 		line-height: 7vw;
 	}
 
-	[data-title]:after {
-		left: 0;
-		bottom: 1.6em;
-	}
 
 	svg #Frame_x5F_Seat #Seat_1_ {
 		transform-origin: 50% 0%;

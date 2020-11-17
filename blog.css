@@ -3,7 +3,7 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: auto;
-    /*padding: 20px;*/
+    padding: 20px;
     max-width: 720px;
     text-align: left;
     background-color: #fff;
@@ -14,8 +14,7 @@ body {
 }
 
 main, header {
-    margin-left: 21.5%;
-    margin-top: 6%;
+    margin-left: auto;
 }
 
 h1,
@@ -109,6 +108,8 @@ img {
 }
 
 code {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
     padding: 2px 5px;
     background-color: #f2f2f2;
 }

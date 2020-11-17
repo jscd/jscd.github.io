@@ -154,7 +154,7 @@
 			</svg></div>
 		<div class="text">
 			<div class="namebar">
-				<h1 class="title">jscd.pw</h1>	
+				<h1 class="title">jscd.pw</h1>
 				<h1 class="name">Justin DeSimpliciis</h1>
 			</div>
 			<br>
@@ -222,6 +222,7 @@
 			</script>
 
 			<script>
+				// Select full email on click
 				const m = document.getElementById("m");
 				m.addEventListener('click', function(event){
 					if(document.body.createTextRange){
@@ -236,6 +237,18 @@
 						s.addRange(r);
 					}
 				});
+			</script>
+
+			<script>
+				function darkMode(){
+					document.getElementsByClassName("content")[0].classList.add('dark');
+				}
+
+				const now = new Date();
+				if(now.getHours() > 16) darkMode();
+
+				// if(window.matchMedia('(prefers-color-scheme: dark)')) darkMode();
+				// window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches && darkMode());
 			</script>
 		</div>
 	</div>

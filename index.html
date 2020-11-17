@@ -19,7 +19,6 @@
 
 </head>
 <body>
-	<div class="content">
 		<div class="uni">
 			<svg version="1.1" id="Unicycle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1617 727" style="enable-background:new 0 0 1617 727;" xml:space="preserve">
 			<g class="BackPedal">
@@ -152,23 +151,26 @@
 				</g>
 			</g>
 			</svg></div>
-		<div class="text">
-			<div class="namebar">
-				<h1 class="title">jscd.pw</h1>
-				<h1 class="name">Justin DeSimpliciis</h1>
-			</div>
-			<br>
+		<header>
+			<h2>jscd.pw</h2>
+			<h1>Justin DeSimpliciis</h1>
+		</header>
+		<main>
+			<p>
 			I'm an undergraduate computer science major at the <em class="nonmobile">Georgia&nbsp;Institute&nbsp;of&nbsp;Technology</em><em class="mobile">Georgia Institute of Technology</em>, with concentrations in
 			<em>information&nbsp;storage &amp; transmission</em> and <em>systems&nbsp;architecture</em>.
-			<br><br>
+			</p>
 
+			<p>
 			My most popular project is called <a href="https://github.com/jscd/Boyfriend-Alert">Boyfriend-Alert</a>,
 			and I'm currently working on a cellular automata library called <a href="https://github.com/jscd/Celly">Celly</a>.
-			<br><br>
+			</p>
 
-			At some point this site will have a <a class="tooltip" data-title="...but for now it's just an empty link :(">blog</a>.
-			<br><br>
+			<p>
+			At some point this site will have a <a class="notyet" title="...but for now it's just an empty link :(">blog</a>.
+			</p>
 
+			<p>
 			When I'm not working, you'll find me
 				building personal projects,
 				attempting to do
@@ -179,10 +181,10 @@
 				making video games,
 				riding a unicycle,
 				and cooking delicious pasta.
-			<br><br>
+			</p>
 
 			<br>
-			<h3 class='heading'>Social &amp; Contact</h3>
+			<h3>Social &amp; Contact</h3>
 			
 			<ul>
 				<li>
@@ -218,7 +220,7 @@
 			<script>
 				// Disable the animation if visited in the last [dmin] mins
 				const dmin = 8;
-				if(hasVisited()){setVisited(dmin);var content_text=document.getElementsByClassName("text")[0];content_text.id="loaded";var uni=document.getElementsByClassName("uni")[0];uni.id="loaded"}else setVisited(dmin);
+				if(hasVisited()){setVisited(dmin);var content_text=document.getElementsByTagName("main")[0];content_text.id="loaded";var uni=document.getElementsByClassName("uni")[0];uni.id="loaded"}else setVisited(dmin);
 			</script>
 
 			<script>
@@ -241,7 +243,7 @@
 
 			<script>
 				function darkMode(){
-					document.getElementsByClassName("content")[0].classList.add('dark');
+					document.getElementsByTagName("body")[0].classList.add('dark');
 				}
 
 				const now = new Date();
@@ -250,7 +252,6 @@
 				// if(window.matchMedia('(prefers-color-scheme: dark)')) darkMode();
 				// window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches && darkMode());
 			</script>
-		</div>
-	</div>
+	</main>
 </body>
 </html>

@@ -5,26 +5,77 @@
 @import url("fonts/fonts.css");
 
 
-body, html {
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	padding-bottom: 20px;
-}
-
 body {
 	margin: auto;
-}
-
-
-body {
 	background-color: #FFFFFF;
 	color: black;
-	width: 100%;
-	display: grid;
-	grid-template-columns: auto;
 }
+
+header {
+	width: 500px;
+	line-height: 150%;
+	margin: 130px 0 15px 25%;
+}
+
+header h2 {
+	margin: 0;
+    font-family: 'Grenze', serif;
+    font-weight: 200;
+    font-size: 36px;
+}
+
+header h1 {
+	margin: 3% 0 0 0;
+    font-family: 'Grenze', serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main {
+	width: 500px;
+
+	margin: 2% 0 10px 25%;
+
+	position: relative;
+
+    font-family: 'Lato', serif;
+	font-size: 16px;
+	line-height: 19px;
+
+	z-index: 100;
+	overflow: visible;
+}
+
+p {
+	padding: 1% 0 1% 0;
+}
+
+h3 {
+	font-weight: bold;
+	line-height: 115%;
+	font-family: 'Lato', serif;
+	margin: 0;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	transition: 0.15s;
+	color: white;
+	background-color: black;
+	text-decoration: none;
+}
+
+em, code, pre {
+	font-size: 90%;
+	font-family: 'Source Code Pro';
+	font-weight: normal;
+}
+
+
 
 ul {
 	margin-top: 0;
@@ -41,73 +92,24 @@ li::before {
 	padding-right: 0.1vw;
 }
 
-a {
-	color: black;
-	text-decoration: underline;
-}
-
-a:hover {
-	transition: 0.15s;
-	color: white;
-	background-color: black;
-	text-decoration: none;
-}
 
 
-.tooltip {
+
+.notyet {
 	cursor: not-allowed;
 	color: darkgreen;
 	text-decoration: none;
 }
 
-.tooltip:hover {
+.notyet:hover {
 	transition: 0.75s;
 	background-color: lightblue;
 	text-decoration: line-through;
 	color: black;
 }
 
-.content {
-	margin: 0;
-	margin-bottom: 10px;
-	padding: 0;
-    font-family: 'Lato', serif;
-    font-weight: normal;
-	position: relative;
-	font-size: 16px;
-	padding-top: 2%;
-}
 
-.content b {
-	font-family: 'Lato', serif;
-	font-weight: 400;
-}
-
-em {
-	font-size: 90%;
-	font-family: 'Source Code Pro';
-	font-weight: normal;
-}
-
-code {
-	font-size: 90%;
-	font-family: 'Source Code Pro';
-	font-weight: normal;
-}
-
-pre {
-	padding: 0;
-	margin: 0;
-}
-
-.heading {
-	font-weight: bold;
-	line-height: 115%;
-	font-family: 'Lato', serif;
-	margin: 0;
-}
-
-.content .uni {
+.uni {
 	overflow: hidden;
 	position: absolute;
 	/*width: 70%;*/
@@ -116,55 +118,14 @@ pre {
 	z-index: 0;
 }
 
-.content .text {
-
-	opacity: 0;
-	margin-top: 5%;
-	margin-left: 25%;
-	/*width: 40vw;*/
-	width: 500px;
-	line-height: 19px;
-	z-index: 100;
-	overflow: visible;
-	height: 100%;
-}
-
-.content .text .title {
-	top: 0;
-	padding-top: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-bottom: 0;
-	position: relative;
-    font-family: 'Grenze', serif;
-    font-weight: 200;
-    font-size: 225%;
-}
-
-.content .namebar {
-	line-height: 150%;
-}
-
-.content .text .name {
-	margin-top: 0;
-	padding-top: 3%;
-    font-family: 'Grenze', serif;
-    font-weight: bold;
-    font-size: 250%;
-}
-
-.eb {
-	padding-left: 1%;
-	padding-right: 1%;
-}
-
 
 .mobile {
 	display: none;
 }
 
+
 @media only screen and (max-width: 812px) {
-	.content {
+	main {
 		overflow: auto;
 		overflow-x: hidden;
 		height: 100%;
@@ -172,18 +133,18 @@ pre {
 		padding-left: 3%;
 	}
 
-	.content code {
+	code {
 		font-size: 3.5vw;
 	}
 
-	.content .uni {
+	.uni {
 		overflow: hidden;
 		overflow-x: hidden;
 		width: 200%;
 		left: -45%;
 	}
 
-	.content .text {
+	main {
 		overflow: visible;
 		width: 60vw;
 		margin-top: 100px;
@@ -194,11 +155,11 @@ pre {
 		height: 100%;
 	}
 
-	.content .text .title {
+	header h2 {
 		font-size: 7vw;
 	}
 
-	.content .text .name {
+	header h1 {
 		font-size: 8vw;
 		line-height: 7vw;
 	}
@@ -228,7 +189,7 @@ pre {
 .st5{fill:#F76F1E;}
 
 
-body .dark {
+.dark {
     color: #eee;
     background-color:#01242e;
     color: #ddd;
@@ -245,14 +206,14 @@ body .dark {
 }
 
 
-.dark .tooltip {
+.dark .notyet {
 	cursor: not-allowed;
 	color: lightblue;
 	text-decoration: none;
 }
 
 
-.dark .tooltip:hover {
+.dark .notyet:hover {
 	transition: 0.75s;
 	background-color: #9B1C1C;
 	text-decoration: line-through;
@@ -286,14 +247,16 @@ body .dark {
 
  */
 
-.content .text {
+main {
+	opacity: 0;
 	-webkit-animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 }
 
-html body .content #loaded {
-	-webkit-animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 reverse backwards paused;
-	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 reverse backwards paused;
+html body #loaded {
+	opacity: 1;
+	-webkit-animation: none;
+	animation: none;
 }
 
 
@@ -335,13 +298,6 @@ svg {
 	transform-origin: 49% 70.5%;
 	-webkit-animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
 	animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
-
-/*	-webkit-animation-name: rideUnicycle, rideUnicycle;
-	-webkit-animation-duration: 6s, 4.8s;
-	-webkit-animation-timing-function: ease-in, linear;
-	-webkit-animation-delay: 2.2s, 8.3s;
-	-webkit-animation-iteration-count: 1, infinite;
-	-webkit-animation-fill-mode: forwards, forwards;*/
 }
 
 #loaded .Wheel, #loaded .FrontPedal, #loaded .BackPedal {

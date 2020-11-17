@@ -93,9 +93,6 @@ li::before {
 	padding-right: 0.1vw;
 }
 
-
-
-
 .notyet {
 	cursor: not-allowed;
 	color: darkgreen;
@@ -248,7 +245,7 @@ li::before {
 
  */
 
-main {
+main, header {
 	opacity: 0;
 	-webkit-animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;

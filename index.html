@@ -245,7 +245,7 @@
 				}
 
 				const now = new Date();
-				if(now.getHours() > 16) darkMode();
+				if(now.getHours() > 16 || now.getHours() < 7) darkMode();
 
 				// if(window.matchMedia('(prefers-color-scheme: dark)')) darkMode();
 				// window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches && darkMode());

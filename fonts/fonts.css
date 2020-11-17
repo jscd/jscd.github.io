@@ -10,7 +10,7 @@
 /* normal */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-Regular.ttf');
+	src: url('lato/Lato-Regular.woff2');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -18,7 +18,7 @@
 /* light */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-Light.ttf');
+	src: url('lato/Lato-Light.woff2');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -26,7 +26,7 @@
 /* bold */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-Bold.ttf');
+	src: url('lato/Lato-Bold.woff2');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -34,7 +34,7 @@
 /* italic */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-Italic.ttf');
+	src: url('lato/Lato-Italic.woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -42,7 +42,7 @@
 /* bold & italic */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-BoldItalic.ttf');
+	src: url('lato/Lato-BoldItalic.woff2');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -50,7 +50,7 @@
 /* light & italic */
 @font-face {
 	font-family: 'Lato';
-	src: url('lato/Lato-LightItalic.ttf');
+	src: url('lato/Lato-LightItalic.woff2');
 	font-weight: 300;
 	font-style: italic;
 }
@@ -66,7 +66,7 @@
  /* normal */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-Regular.ttf');
+	src: url('grenze/Grenze-Regular.woff2');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -74,7 +74,7 @@
 /* light */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-Light.ttf');
+	src: url('grenze/Grenze-Light.woff2');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -82,7 +82,7 @@
 /* extra-light */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-ExtraLight.ttf');
+	src: url('grenze/Grenze-ExtraLight.woff2');
 	font-weight: 200;
 	font-style: normal;
 }
@@ -90,7 +90,7 @@
 /* bold */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-Bold.ttf');
+	src: url('grenze/Grenze-Bold.woff2');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -98,7 +98,7 @@
 /* italic */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-Italic.ttf');
+	src: url('grenze/Grenze-Italic.woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -106,7 +106,7 @@
 /* bold & italic */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-BoldItalic.ttf');
+	src: url('grenze/Grenze-BoldItalic.woff2');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -114,7 +114,7 @@
 /* light & italic */
 @font-face {
 	font-family: 'Grenze';
-	src: url('grenze/Grenze-LightItalic.ttf');
+	src: url('grenze/Grenze-LightItalic.woff2');
 	font-weight: 300;
 	font-style: italic;
 }
@@ -136,7 +136,7 @@
 /* normal */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Regular.ttf');
+	src: url('source_code_pro/SourceCodePro-Regular.woff2');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -144,7 +144,7 @@
 /* light */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Light.ttf');
+	src: url('source_code_pro/SourceCodePro-Light.woff2');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -152,7 +152,7 @@
 /* bold */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Bold.ttf');
+	src: url('source_code_pro/SourceCodePro-Bold.woff2');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -160,7 +160,7 @@
 /* italic */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Italic.ttf');
+	src: url('source_code_pro/SourceCodePro-Italic.woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -168,7 +168,7 @@
 /* bold & italic */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-BoldItalic.ttf');
+	src: url('source_code_pro/SourceCodePro-BoldItalic.woff2');
 	font-weight: bold;
 	font-style: italic;
 }
@@ -176,7 +176,7 @@
 /* light & italic */
 @font-face {
 	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-LightItalic.ttf');
+	src: url('source_code_pro/SourceCodePro-LightItalic.woff2');
 	font-weight: 300;
 	font-style: italic;
 }

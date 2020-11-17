@@ -9,6 +9,7 @@ body {
 	margin: auto;
 	background-color: #FFFFFF;
 	color: black;
+	overflow: hidden;
 }
 
 header {

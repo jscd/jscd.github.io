@@ -256,7 +256,13 @@ ul.discover-posts li small a {
     }
 
     a {
-        color: #8cc2dd;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: white;
     }
 
     code {

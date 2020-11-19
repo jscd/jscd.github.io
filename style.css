@@ -1,20 +1,15 @@
-/* CSS for https://jscd.pw
- *  
- */
-
-@import url("fonts/fonts.css");
-
-
 body {
-	margin: auto;
-	background-color: #FFFFFF;
+	background-color: #f2f2f2;
+	overflow-x: hidden;
 	color: black;
+	margin: 0;
 }
 
 header {
 	width: 475px;
 	line-height: 150%;
-	margin: 130px 0 15px 10vw;
+	margin: 50px auto 0 auto;
+	padding-right: 300px;
 }
 
 header h2 {
@@ -31,18 +26,26 @@ header h1 {
     font-size: 40px;
 }
 
+section {
+	width: 775px;
+	margin: 0 auto 0 auto;
+	z-index: 100;
+}
+
 main {
 	width: 475px;
-
-	margin: 2% 0 10px 10vw;
-
-	position: relative;
-
     font-family: 'Lato', serif;
 	font-size: 16px;
 	line-height: 19px;
+}
 
-	z-index: 100;
+main, .uni {
+	display: inline;
+	float: left;
+}
+
+.uni {
+	float: right;
 }
 
 p {
@@ -84,9 +87,7 @@ ul {
 }
 
 li::before {
-	/*content: "\1F78C";*/
 	content: "\2B1D";
-
 	font-weight: bold;
 	padding-right: 0.1vw;
 }
@@ -105,24 +106,21 @@ li::before {
 }
 
 .uni {
-	position: absolute;
-	overflow: hidden;
+	overflow: visible;
 	height: 500px;
-	width: 538px;
-	left: 40vw;
+	width: 300px;
+	left: 250px;
 }
 
 #Unicycle {
-	position: absolute;
 	width: 1100px;
-	margin-left: -150px;
-	z-index: 0;
+	height: 500px;
+	margin-left: -390px;
+	pointer-events: none;
 }
 
 
-.mobile {
-	display: none;
-}
+.mobile {display: none;}
 
 
 @media only screen and (max-width: 812px) {
@@ -132,17 +130,24 @@ li::before {
 	}
 
 	header {
-		margin-top: 10%;
+		margin-top: 37.5px;
 		line-height: 200%;
+		padding-bottom: 5px;
+		width: 250px;
 	}
 
-	main, header {
+	section, header {
 		margin-left: 5%;
+		overflow:hidden;
+	}
+
+	main {
 		width: 250px;
 	}
 
 	.uni {
-		left: 5vw;
+		float: left;
+		margin: 0 auto 10px auto;
 	}
 
 	.Seat_1_ {
@@ -158,7 +163,6 @@ li::before {
 		display: inline;
 	}
 }
-
 
 /* Unicycle SVG CSS */
 .st0{fill:#1A1A1A;}
@@ -200,8 +204,6 @@ li::before {
 	color: white;
 }
 
-
-
 .dark .st0{fill:#FFF9C2;}
 .dark .st1{fill:#FFF9C2;stroke:#FFF9C2;stroke-miterlimit:10;}
 .dark .st2{fill:#9B1C1C;}
@@ -212,30 +214,15 @@ li::before {
 .dark .st7{fill:#756D54;}
 .dark .st8{fill:#9B1C1C;}
 
+/* ANIMATION STUFF */
 
-
-
-
-
-
-
-/* ANIMATION STUFF
-
-
-
-
-
- */
-
-main, header {
+section, header {
 	opacity: 0;
-	-webkit-animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 }
 
 html body #loaded {
 	opacity: 1;
-	-webkit-animation: none;
 	animation: none;
 }
 
@@ -246,11 +233,6 @@ html body #loaded {
 	100% {opacity: 1;}
 }
 
-@-webkit-keyframes fadein {
-	0% {-webkit-opacity: 0;}
-	100% {-webkit-opacity: 1;}
-}
-
 /* Unicycle SVG */
 svg {
 	width: 100%;
@@ -259,31 +241,22 @@ svg {
 
 .Frame_x5F_Seat {
 	transform-origin: 49% 70%;
-
-	/*cubic-bezier(0.990, -0.005, 0.965, 0.970)*/
-	-webkit-animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse backwards;
 	animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse backwards;
 
 }
 
 #loaded .Frame_x5F_Seat {
 	transform-origin: 49% 70%;
-
-	/*cubic-bezier(0.990, -0.005, 0.965, 0.970)*/
-	-webkit-animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse forwards paused;
 	animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse forwards paused;
 }
 
 .Wheel, .FrontPedal, .BackPedal {
 	transform-origin: 49% 70.5%;
-	-webkit-animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
 	animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
 }
 
 #loaded .Wheel, #loaded .FrontPedal, #loaded .BackPedal {
 	transform-origin: 49% 70.5%;
-
-	-webkit-animation: rideUnicycleB 4.8s linear 0s infinite normal forwards;
 	animation: rideUnicycleB 4.8s linear 0s infinite normal forwards;
 }
 
@@ -296,12 +269,10 @@ svg {
 }
 
 .FrontPedal .Pedal, .BackPedal .Pedal {
-	-webkit-animation: spinPedalA 6s ease-in 2.2s 1 normal forwards, spinPedalB 4.8s linear 8.2s infinite normal forwards;
 	animation: spinPedalA 6s ease-in 2.2s 1 normal forwards, spinPedalB 4.8s linear 8.2s infinite normal forwards;
 }
 
 #loaded .FrontPedal .Pedal, #loaded .BackPedal .Pedal {
-	-webkit-animation: spinPedalB 4.8s linear 0s infinite normal forwards;
 	animation: spinPedalB 4.8s linear 0s infinite normal forwards;
 }
 
@@ -333,31 +304,6 @@ svg {
 @keyframes rideAway {
 	0% {transform: translateX(0%);}
 	100% {transform: translateX(40%);}
-}
-
-@-webkit-keyframes dropUnicycle {
-	0% {-webkit-transform: rotateZ(0deg);}
-	100% {-webkit-transform: rotateZ(-105deg);}
-}
-
-@-webkit-keyframes rideUnicycleA {
-	0% {-webkit-transform: rotateZ(0deg);}
-	100% {-webkit-transform: rotateZ(360deg);}
-}
-
-@-webkit-keyframes rideUnicycleB {
-	0% {-webkit-transform: rotateZ(0deg);}
-	100% {-webkit-transform: rotateZ(360deg);}
-}
-
-@-webkit-keyframes spinPedalA {
-	0% {-webkit-transform: rotateZ(0deg);}
-	100%{-webkit-transform: rotateZ(-360deg);}
-}
-
-@-webkit-keyframes spinPedalB {
-	0% {-webkit-transform: rotateZ(0deg);}
-	100%{-webkit-transform: rotateZ(-360deg);}
 }
 
 @media only screen and (max-width: 812px) {

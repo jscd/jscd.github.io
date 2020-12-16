@@ -131,8 +131,14 @@ blockquote {
 }
 
 footer {
-    padding: 25px;
+    color: #a6a6a6;
+    padding: 50px 25px;
     text-align: center;
+}
+
+footer::before {
+    white-space: pre;
+    content: "Copyright © 2020 Justin DeSimpliciis.\AOpinions are mine alone.\A";
 }
 
 .helptext {

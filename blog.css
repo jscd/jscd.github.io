@@ -273,7 +273,10 @@ ul.discover-posts li small a {
     }
 
     code {
-        background-color: #777;
+        background-color: #021D27;
+        border: 1px solid #242628;
+        border-radius: 4px;
+        margin: 0 2px;
     }
 
     pre code {

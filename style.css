@@ -226,7 +226,7 @@ li::before {
 
 /* ANIMATION STUFF */
 
-main, header {
+main, header, footer {
 	opacity: 0;
 	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 }

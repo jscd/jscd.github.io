@@ -230,11 +230,6 @@
 				</svg>
 			</div>
 
-			<script>
-				// Disable the animation if visited in the last [dmin] mins
-				const dmin = 8;
-				if(hasVisited()){setVisited(dmin);var c=document.getElementsByTagName("section")[0];c.id="loaded";var uni=document.getElementsByClassName("uni")[0];uni.id="loaded";var h=document.getElementsByTagName("header")[0];h.id="loaded";}else setVisited(dmin);
-			</script>
 
 			<script>
 				// Select full email on click
@@ -245,5 +240,10 @@ const m=document.getElementById("m");m.addEventListener('click',function(event){
     <footer>
         Copyright &#169; 2019–2020 Justin DeSimpliciis.
     </footer>
+	<script>
+		// Disable the animation if visited in the last [dmin] mins
+		const dmin = 8;
+		if(hasVisited()){setVisited(dmin);var c=document.getElementsByTagName("section")[0];c.id="loaded";var uni=document.getElementsByClassName("uni")[0];uni.id="loaded";var h=document.getElementsByTagName("header")[0];h.id="loaded";var f=document.getElementsByTagName("footer")[0];f.id="loaded";}else setVisited(dmin);
+	</script>
 </body>
 </html>

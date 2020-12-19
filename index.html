@@ -19,14 +19,6 @@
 
 </head>
 <body>
-		<script>
-			function darkMode(){document.getElementsByTagName("body")[0].classList.add('dark');}
-			const now = new Date();
-			if(now.getHours() > 16 || now.getHours() < 7) darkMode();
-
-			// if(window.matchMedia('(prefers-color-scheme: dark)')) darkMode();
-			// window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches && darkMode());
-		</script>
 		<header>
 			<h2>jscd.pw</h2>
 			<h1>Justin DeSimpliciis</h1>
@@ -233,7 +225,20 @@
 
 			<script>
 				// Select full email on click
-const m=document.getElementById("m");m.addEventListener('click',function(event){if(document.body.createTextRange){const r=document.body.createTextRange();r.moveToElementText(m);r.select()}else if(window.getSelection){const s=window.getSelection();const r=document.createRange();r.selectNodeContents(m);s.removeAllRanges();s.addRange(r)}});
+				const m=document.getElementById("m");
+				m.addEventListener('click',function(event){
+					if(document.body.createTextRange){
+						const r=document.body.createTextRange();
+						r.moveToElementText(m);
+						r.select()
+					}else if(window.getSelection){
+						const s=window.getSelection();
+						const r=document.createRange();
+						r.selectNodeContents(m);
+						s.removeAllRanges();
+						s.addRange(r)
+					}
+				});
 			</script>
 	</section>
 

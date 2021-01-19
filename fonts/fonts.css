@@ -1,77 +1,10 @@
 /* @font-face definitions */
 
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-Regular.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-Light.woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-Bold.woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-Italic.woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-BoldItalic.woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* light & italic */
-@font-face {
-	font-family: 'Lato';
-	src: url('lato/Lato-LightItalic.woff2');
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-
  /* normal */
 @font-face {
 	font-family: 'Grenze';
 	src: url('grenze/Grenze-Regular.woff2');
 	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-/* light */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-Light.woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-/* extra-light */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-ExtraLight.woff2');
-	font-weight: 200;
 	font-style: normal;
 	font-display: swap;
 }
@@ -82,86 +15,5 @@
 	src: url('grenze/Grenze-Bold.woff2');
 	font-weight: bold;
 	font-style: normal;
-	font-display: swap;
-}
-
-/* italic */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-Italic.woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* bold & italic */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-BoldItalic.woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* light & italic */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-LightItalic.woff2');
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* normal */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Regular.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-/* light */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Light.woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-/* bold */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Bold.woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-/* italic */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-Italic.woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* bold & italic */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-BoldItalic.woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-
-/* light & italic */
-@font-face {
-	font-family: 'Source Code Pro';
-	src: url('source_code_pro/SourceCodePro-LightItalic.woff2');
-	font-weight: 300;
-	font-style: italic;
 	font-display: swap;
 }

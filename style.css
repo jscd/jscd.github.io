@@ -1,5 +1,7 @@
 body {
-	font-family: 'Lato', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+    font-family: system-ui, sans-serif;
+    font-weight: normal;
 	color: black;
 	background-color: #f2f2f2;
 
@@ -89,7 +91,7 @@ a:hover {
 
 em, code, pre {
 	font-size: 90%;
-	font-family: 'Source Code Pro';
+	font-family: monospace; 
 	font-weight: normal;
 }
 

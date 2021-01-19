@@ -237,7 +237,7 @@ li::before {
 
 main, header, footer {
 	opacity: 0;
-	animation: fadein 1s cubic-bezier(0.565, 0.070, 0.245, 1.010) 0.7s 1 normal forwards;
+	animation: fadein 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1.5s 1 normal forwards;
 }
 
 #loaded, #loaded * {
@@ -260,7 +260,7 @@ svg {
 
 .Frame_x5F_Seat {
 	transform-origin: 49% 70%;
-	animation: dropUnicycle 1s cubic-bezier(0.565, 0.070, 0.245, 1.010) 0.2s 1 alternate-reverse backwards;
+	animation: dropUnicycle 1.2s cubic-bezier(0.565, 0.070, 0.245, 1.010) 1s 1 alternate-reverse backwards;
 
 }
 
@@ -270,7 +270,7 @@ svg {
 
 .Wheel, .FrontPedal, .BackPedal {
 	transform-origin: 49% 70.5%;
-	animation: rideUnicycleA 6s ease-in 1.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
+	animation: rideUnicycleA 6s ease-in 2.2s 1 normal forwards, rideUnicycleB 4.8s linear 8.2s infinite normal forwards;
 }
 
 #loaded .Wheel, #loaded .FrontPedal, #loaded .BackPedal {
@@ -286,7 +286,7 @@ svg {
 }
 
 .FrontPedal .Pedal, .BackPedal .Pedal {
-	animation: spinPedalA 6s ease-in 1.2s 1 normal forwards, spinPedalB 4.8s linear 8.2s infinite normal forwards;
+	animation: spinPedalA 6s ease-in 2.2s 1 normal forwards, spinPedalB 4.8s linear 8.2s infinite normal forwards;
 }
 
 #loaded .FrontPedal .Pedal, #loaded .BackPedal .Pedal {

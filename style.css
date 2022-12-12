@@ -1,9 +1,10 @@
 body {
 	/*font-family: 'Lato', sans-serif;*/
-    font-family: 'Lato', system-ui, sans-serif;
-    font-weight: normal;
-	color: black;
-	background-color: #f2f2f2;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #222;
+	background-color: #f0f0f0;
 
 	overflow-x: hidden;
 	left: auto;
@@ -12,8 +13,13 @@ body {
 	display: block;
 }
 
+h1, h2, h3 {
+	color: #000;
+}
+
+
 header {
-    font-family: 'Grenze', serif;
+	font-family: 'Grenze Gotisch', serif;
 	line-height: 150%;
 
 	width: 475px;
@@ -21,15 +27,15 @@ header {
 }
 
 header h2 {
-    font-weight: 200;
-    font-size: 36px;
+	font-weight: 200;
+	font-size: 36px;
 
 	margin: 0;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 40px;
+	font-weight: bold;
+	font-size: 40px;
 
 	margin: 3% 0 0 0;
 }
@@ -54,9 +60,11 @@ footer {
 
 main {
 	font-size: 16px;
-	line-height: 19px;
+	font-weight: 400;
+	line-height: 1.4;
 
-	width: 475px;
+	width: 465px;
+	padding-right: 10px;
 	display: inline;
 	float: left;
 }
@@ -78,7 +86,8 @@ h3 {
 }
 
 a {
-	color: black;
+	/*color: black;*/
+	color: #444;
 	text-decoration: underline;
 }
 
@@ -87,6 +96,7 @@ a:hover {
 	color: white;
 	background-color: black;
 	text-decoration: none;
+	text-shadow: black;
 }
 
 em, code, pre {
@@ -194,12 +204,12 @@ li::before {
 	body {
 	    color: #eee;
 	    background-color:#01242e;
-	    color: #ddd;
 	}
 
-	a {
-	    color: white;
+	a, h1, h2, h3 {
+	    color: #eee;
 	}
+
 
 	a:hover {
 	    text-decoration: none;

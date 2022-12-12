@@ -1,13 +1,5 @@
 /* @font-face definitions */
 
- /* normal */
-@font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-ExtraLight.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
 
 @font-face {
     font-family: 'Lato';
@@ -17,10 +9,19 @@
     font-display: swap;
 }
 
+/* normal */
+@font-face {
+	font-family: 'Grenze Gotisch';
+	src: url('grenze_gotisch/GrenzeGotisch-ExtraLight.ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 /* bold */
 @font-face {
-	font-family: 'Grenze';
-	src: url('grenze/Grenze-Bold.woff2');
+	font-family: 'Grenze Gotisch';
+	src: url('grenze_gotisch/GrenzeGotisch-Bold.ttf');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;

@@ -1,2 +1,2 @@
 # jscd.pw
-My personal website
+My personal website, available at [jscd.pw](jscd.pw).

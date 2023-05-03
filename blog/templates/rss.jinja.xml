@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   <title>Justin's Blog</title>
+   <description>Justin's Blog</description>
+   <link>jscd.pw</link>
+   <atom:link href="http://alexanderle.com/blog/feed.rss"
+     rel="self" type="application/rss+xml" />
+
+	{% for entry in entries %}
+	<item>
+		<title>{{ entry.title }}</title>
+		<link>{{ entry.url }}</link>
+		<guid>{{ entry.url }}</guid>
+		<pubDate>{{ entry.date }}</pubDate>
+	</item>
+	{% endfor %}
+</channel>
+</rss>
+

@@ -1,4 +1,3 @@
-# What to compile by default?
 SOURCES := $(shell find ./posts -name '*.md')
 TARGETS := $(patsubst %.md,%.html,$(SOURCES))
 
@@ -9,13 +8,16 @@ STYLES := \
 	../styles/tufte-extra.css
 
 TEMPLATE := templates/tufte.html5
+JINJA_TEMPLATES := templates/index.html.jinja templates/rss.xml.jinja
 
+ASSEMBLY_SCRIPT := assemble.py
+
+# Organizes generated HTML files, and 
 .PHONY: all
-all: $(TARGETS)
+all: $(TARGETS) $(JINJA_TEMPLATES) $(ASSEMBLY_SCRIPT)
+	python $(ASSEMBLY_SCRIPT)
 
-# Note: you will need pandoc 2 or greater for this to work
-
-## Generalized rule: how to build a .html file from each .md
+# Builds HTML files from Markdown ones
 %.html: %.md $(TEMPLATE) $(STYLES)
 	pandoc \
 		--katex \
@@ -28,7 +30,9 @@ all: $(TARGETS)
 		--output $@ \
 		$<
 
+# Because the assembly script renames and moves files, just delete all HTML files
 .PHONY: clean
 clean:
-	rm -f $(TARGETS)
+	find . -name '*.html' -delete
+	rm rss.xml
 

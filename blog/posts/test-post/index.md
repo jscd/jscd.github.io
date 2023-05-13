@@ -1,6 +1,5 @@
 ---
 title: Justin's Blog
-author: Justin DeSimpliciis
 date: May 3, 2023
 ---
 

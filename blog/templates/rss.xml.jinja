@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   <title>Justin's Blog</title>
+   <link>https://jscd.pw/blog/</link>
+   <description>Justin's Blog</description>
+   <language>en-us</language>
+   <atom:link href="https://jscd.pw/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+   {% for entry in entries %}
+   <item>
+      <title>{{ entry.title }}</title>
+      {% if description %}<description>{{ description }}</description>{% endif %}
+      <author>Justin DeSimpliciis</author>
+      <pubDate>{{ entry.date }}</pubDate>
+
+      <link>{{ entry.absolute_url }}</link>
+      <guid>{{ entry.absolute_url }}</guid>
+   </item>
+   {% endfor %}
+</channel>
+</rss>
+

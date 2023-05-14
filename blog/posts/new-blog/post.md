@@ -3,6 +3,7 @@ title: New blog!
 date: May 13, 2023
 ---
 
+<section>
 Hi!
 
 I'll probably delete this post once I start saying things here that are
@@ -19,5 +20,6 @@ Why did I do this? I don't know!
 
 
 Anyway, I hope I actually use this one.
+</section>
 
 

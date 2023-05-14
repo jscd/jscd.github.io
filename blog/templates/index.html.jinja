@@ -7,22 +7,29 @@
   <title>Justin’s Blog</title>
   <style>code{white-space: pre;}</style>
   <link rel="stylesheet" href="/styles/tufte.css">
-  <link rel="stylesheet" href="/styles/pandoc.css">
-  <link rel="stylesheet" href="/styles/pandoc-solarized.css">
-  <link rel="stylesheet" href="/styles/tufte-extra.css">
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
+  <link rel="stylesheet" href="/styles/blog-head.css">
 </head>
-<body>
-  <p style="font-size:16px;"><small><a href="/">Home</a></small> · <small><a href="/blog">Archive</a></small></p>
-  <article>
-    <header> <h1 class="title">Justin’s Blog</h1> </header>
-    <ul>
+<body style="padding-left:0;">
+  <article style="padding:0;">
+	<header id="blog-head">
+		<h2>jscd.pw/blog/</h2>
+		<h1>Justin's Blog</h1>
+        <p><small><a href="/">Home</a></small> · <small><a href="/blog">Posts</a></small></p>
+	</header>
+    <table style="font-size: 1.4rem;">
+      {% for entry in entries %}
+      <tr><td>{{ entry.date }}</td><td><a href="{{ entry.url }}">{{ entry.title }}</a></td>
+      {% endfor %}
+    </table>
+    <!--
+    <ul style="font-size: 1.4rem;">
       {% for entry in entries %}
       <li><a href="{{ entry.url }}">{{ entry.title }}</a> – {{ entry.date }} </li>
       {% endfor %}
     </ul>
+    -->
   </article>
   </body>
 </html>

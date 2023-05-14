@@ -5,7 +5,9 @@ STYLES := \
 	../styles/tufte.css \
 	../styles/pandoc.css \
 	../styles/pandoc-solarized.css \
-	../styles/tufte-extra.css
+	../styles/tufte-extra.css \
+	../fonts/fonts.css \
+	../styles/blog-head.css
 
 TEMPLATE := templates/tufte.html5
 JINJA_TEMPLATES := templates/index.html.jinja templates/rss.xml.jinja

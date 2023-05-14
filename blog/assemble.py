@@ -5,6 +5,7 @@
 # 
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from dateutil.parser import parse as parse_date
 from pathlib import Path
 import os
 
@@ -42,6 +43,12 @@ def parse_file(filepath):
                 print('Invalid header line: `{}`. Skipping...'.format(line))
                 continue
 
+            if key == 'date':
+                raw = parse_date(val)
+                file_vars['date_raw'] = raw
+
+                val = raw.strftime('%b %d, %Y')
+
             val = val.strip() 
             file_vars[key] = val
 
@@ -71,6 +78,8 @@ def run():
         file_metadata.append(headers)
 
     print('All files parsed! Generating index and feed...')
+
+    file_metadata = sorted(file_metadata, key=lambda d: d['date_raw'], reverse=True)
 
     # Generate blog index and RSS, and write out
     index_content = index_template.render(entries=file_metadata)

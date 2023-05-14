@@ -1,6 +1,7 @@
 ---
 title: Tufte CSS
 subtitle: Dave Liepmann
+date: December 13, 1924
 header-includes:
 - '<link rel="stylesheet" href="latex.css"/>'
 ---

@@ -14,13 +14,29 @@
   $for(css)$ <link rel="stylesheet" href="$css$"> $endfor$
   $if(math)$ $math$ $endif$
   $for(header-includes)$ $header-includes$ $endfor$
+  <style>
+  body {
+    margin: 50px 0 auto 25%;
+    padding: 0;
+  }
+  @media only screen and (max-width: 812px) {
+    body {
+      margin: 50px 0 auto 5%;
+      padding: 0;
+    }
+  }
+  </style>
 </head>
 <body>
-  <p style="font-size:16px;"><small><a href="/">Home</a></small> · <small><a href="/blog">Archive</a></small></p>
   $for(include-before)$
   $include-before$
   $endfor$
-  <article>
+  <article style="padding: 0;">
+	<header id="blog-head">
+		<h2>jscd.pw/blog/</h2>
+		<h1>Justin's Blog</h1>
+        <p><small><a href="/">Home</a></small> · <small><a href="/blog">Posts</a></small></p>
+	</header>
     $if(title)$
     <header>
       <h1 class="title">$title$</h1>

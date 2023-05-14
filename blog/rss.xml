@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   <title>Justin's Blog</title>
+   <link>https://jscd.pw/blog/</link>
+   <description>Justin's Blog</description>
+   <language>en-us</language>
+   <atom:link href="https://jscd.pw/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+   
+   <item>
+      <title>New blog!</title>
+      
+      <author>Justin DeSimpliciis</author>
+      <pubDate>May 13, 2023</pubDate>
+
+      <link>https://jscd.pw/blog/posts/new-blog</link>
+      <guid>https://jscd.pw/blog/posts/new-blog</guid>
+   </item>
+   
+</channel>
+</rss>

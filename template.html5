@@ -35,21 +35,15 @@ $endfor$
 <header>
 <h1 class="title">$title$</h1>
 <section class="metadata">
-$if(subtitle)$
-<p class="subtitle">$subtitle$</p>
-$endif$
-$if(author)$
-<p class="author">
-  $if(author-url)$
-    <a href="$author-url$">$author$</a>
-  $else$
-    $author$
-  $endif$
-</p>
-$endif$
-$if(date)$
-<p class="date $if(toc)$before-toc$endif$"><time datetime="$date$">$date$</time></p>
-$endif$
+<table>
+<tbody>
+  $if(subtitle)$<tr><td>$subtitle$</td></tr>$endif$
+<tr>
+  $if(author)$<td>$author$</td>$endif$
+  $if(date)$<td><time datetime="$date$">$date$</time></td>$endif$
+</tr>
+</tbody>
+</table>
 </section>
 </header>
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc-markdown-css-theme" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2023-07-22" />
+  <title>jscd.pw</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/skylighting-solarized-theme.css" />
+  <link rel="stylesheet" href="css/uni.css" />
+</head>
+<body>
+
+<header>
+<h1 class="title">jscd.pw</h1>
+<section class="metadata">
+<p class="subtitle">My lil website</p>
+<p class="date "><time datetime="2023-07-22">2023-07-22</time></p>
+</section>
+</header>
+
+
+<main>
+<svg>
+<use href="img/uni.svg#Unicycle"></use>
+</svg>
+<p class="signoff">
+<a href="/">↑ Back to the top</a>
+</p>
+</main>
+
+<script>
+;(function() {
+  // Non-essential if user has JavaScript off. Just makes checkboxes look nicer.
+  var selector = '.task-list > li > input[type="checkbox"]';
+  var checkboxes = document.querySelectorAll(selector);
+  Array.from(checkboxes).forEach((checkbox) => {
+    var wasChecked = checkbox.checked;
+    checkbox.disabled = false;
+    checkbox.addEventListener('click', (ev) => {ev.target.checked = wasChecked});
+  });
+})();
+</script>
+</body>
+</html>
